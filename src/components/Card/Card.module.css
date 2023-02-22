@@ -1,0 +1,34 @@
+.container {
+    border:  3px solid red;
+    background-color: aquamarine;
+    border-radius: 5px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+.image {
+    width: 200px;
+}
+
+.buttonCointainer{
+    /* border: 3px solid gold; */
+    display: flex;
+    justify-content: flex-end;
+
+}
+.buttonCointainer button {
+    color:white;
+    background-color: #c74646;
+    }
+
+.dataContainer{
+    text-align: center;
+    padding: 10px;
+}
+
+.dataContainer h2{
+    margin: 5px;
+    font-size: 30px;
+    color: gray;
+}

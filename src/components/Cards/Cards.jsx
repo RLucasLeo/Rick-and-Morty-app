@@ -1,9 +1,9 @@
-import Card from './Card';
+import Card from '../Card/Card.jsx';
 
 export default function Cards(props) {
    const { characters } = props;
    return (
-      <div>
+      <div style={{display: "flex", justifyContent: "space-between"}}>
          {
             characters.map(({name, species, gender, image})=>{
                return <Card 
