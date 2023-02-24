@@ -4,16 +4,16 @@ export default function Cards(props) {
    const { characters } = props;
    return (
       <div style={{display: "flex", justifyContent: "space-between"}}>
-         {
-            characters.map(({name, species, gender, image})=>{
-               return <Card 
-               name={name}
-               species={species}
-               gender={gender}
-               image={image}
-               onClose={()=> window.alert("Emulamos que se cierra la card")}
+         {characters.map(character =>(
+            <Card 
+               key={character.id}
+               name={character.name}
+               species={character.species}
+               gender={character.gender}
+               image={character.image}
+               onClose={() => props.onClose(character.id)}
                />
-            })
-         }
-      </div>)
+            ))}
+      </div>
+      );
 }
