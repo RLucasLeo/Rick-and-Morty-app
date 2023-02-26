@@ -1,4 +1,4 @@
-import styles from "./Detail.module.css";
+// import styles from "./Detail.module.css";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
@@ -29,6 +29,7 @@ export default function Detail(props){
             <Link to="/home"><button>Volver</button></Link>
             <h1>Detail</h1>
             <h2>Nombre: {character.name}</h2>
+            <h2>Estado: {character.status}</h2>
             <img src={character.image} alt={character.name} />
         </div>
     )
