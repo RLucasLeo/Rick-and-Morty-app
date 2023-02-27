@@ -1,7 +1,12 @@
+
 .container {
     display: flex;
-    background-color: darksalmon;
     margin: auto;
+    padding: 10px 20px;
+}
+.fondo {
+        background-color: rgba(44, 228, 127, 0.5);
+        border-radius: 20px;
 }
 .container .boton {
     color: white;

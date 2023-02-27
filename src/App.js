@@ -50,7 +50,6 @@ function App () {
   return (
     <div className='App' style={{ padding: '25px' }}>
       {location.pathname === "/" ? <Form login={login}/> : <NavBar onSearch={onSearch} /> }
-      <hr />
       <Routes>
           <Route path="/about" element={<About/>}/> 
           <Route path="/home" element={<Cards characters={characters} onClose={onClose}  />}/> 
