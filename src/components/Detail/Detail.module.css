@@ -1,3 +1,17 @@
-div {
-    color:beige;
+.container{
+    /* background-image: url("../img/portalPNG.png"); */
+    background-color: rgba(240, 255, 255, 0.315);
+    margin: 2rem;
+    background-attachment:scroll;
+    background-size: cover;
+    justify-content: center;
+    border-radius: 150px ;
+    border: 1px solid rgba(0, 0, 0, 0.479);
+}
+
+.titulos{
+    color: rgba(240, 248, 255, 0);
+}
+.imagen{
+    border-radius: 10px;
 }

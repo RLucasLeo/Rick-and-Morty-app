@@ -1,0 +1,26 @@
+
+form{    display: flexbox;
+    margin: auto;
+    padding-top: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(68, 63, 100, 0.61);
+    background-origin: content-box;
+    border-radius: 20px;
+    box-shadow: 20px 20px 20px 20px rgba(204, 182, 182, 0.39);
+    border: 2px solid rgba(46, 37, 37, 0.349);
+}
+.datos{
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(23, 19, 56);
+}
+
+label{
+    color: white;
+}
+
+input {
+    background-color: rgb(31, 13, 95);
+    color: white;
+}
