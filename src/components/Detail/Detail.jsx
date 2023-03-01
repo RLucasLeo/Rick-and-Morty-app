@@ -32,9 +32,7 @@ export default function Detail(props){
              <h2>Nombre: {character.name}</h2>
              <h2>Estado: {character.status}</h2>
             <img className={styles.imagen} src={character.image} alt={character.name} />
-            <h2>Location: {character.name}</h2>
-            <h2>Lo que siga: {character.name}</h2>
-            <p className={styles.titulos}>falsetext</p>
+            <h2>Location: </h2>
             </div>
         </div>
     )
