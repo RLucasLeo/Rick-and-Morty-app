@@ -1,0 +1,48 @@
+.container {
+    border:  3px solid rgba(109, 51, 13, 0.781);
+    background-color: rgba(180, 180, 180, 0.753);
+    border-radius: 20px;
+    width: 300px;
+    padding: 10px;
+    box-shadow: 0 0 10px black;
+    margin: 10px;
+}
+
+.image {
+    width: 200px;
+    border-radius: 20px;
+    border: 3px solid  #7a7575;
+}
+
+.buttonCointainer{
+    /* border: 3px solid gold; */
+    display: flex;
+    justify-content: flex-end;
+
+}
+.buttonCointainer button {
+    border-radius: 1px;
+    color:white;
+    background-color: #dd3d3d;
+    }
+
+    .buttonCointainer :hover{
+        cursor: pointer;
+    }
+
+.dataContainer{
+    text-align: center;
+    padding: 10px;
+}
+
+.dataContainer h2{
+    margin: 5px;
+    font-size: 30px;
+    color: Black;
+}
+
+.dataContainerAbajo {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+}

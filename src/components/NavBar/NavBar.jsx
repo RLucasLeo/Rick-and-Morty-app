@@ -9,12 +9,9 @@ export default function NavBar(props) {
          <NavLink to="/" className={styles.boton}>Logout</NavLink>
          <NavLink className={styles.boton}><SearchBar 
           onSearch={props.onSearch}/></NavLink>
-          <NavLink to="/about" className={styles.boton}>
-            About
-         </NavLink>
-         <NavLink to="/home" className={styles.boton}>
-            Home
-         </NavLink>
+          <NavLink to="/about" className={styles.boton}>About</NavLink>
+         <NavLink to="/home" className={styles.boton}> Home</NavLink>
+         <NavLink to="/favorites" className={styles.boton}> Favorites</NavLink>
          
         
          </div>
