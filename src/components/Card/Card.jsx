@@ -4,6 +4,7 @@ import { useDispatch, useSelector} from "react-redux";
 import { useState, useEffect } from "react";
 import { addFavorite, deleteFavorite } from "../../redux/actions";
 
+//RESTAURADO A COMMIT "FILTRO DE PERSONAJES FAVORITOS"
 
 export default function Card(props) {
    const dispatch =  useDispatch();
