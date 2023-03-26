@@ -26,7 +26,7 @@ const reducer=(state=initialState, action)=>{
         case "GET_FAVORITES":
             return{
                 ...state,
-                myFavorites: payload,
+                myFavorites: action.payload,
                 errors: {},
             }
         case FILTER:
@@ -48,7 +48,7 @@ const reducer=(state=initialState, action)=>{
         case "ERROR":{
             return{
                 ...state,
-                errors: payload,
+                errors: action.payload,
             }
         }
 

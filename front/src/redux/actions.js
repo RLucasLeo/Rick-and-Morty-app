@@ -4,7 +4,7 @@ import axios from "axios";
 export const addFavorite = (character) => {
     return async function(dispatch){
         try {
-            const response = await axios .post("http://localhost:3001/rickandmorty/favs", character);
+            const response = await axios.post("http://localhost:3001/rickandmorty/favs", character);
             return dispatch ({
                 type: ADD_FAVORITE,
                 payload: response.data,
@@ -22,7 +22,7 @@ export const addFavorite = (character) => {
 export const deleteFavorite = (id) =>{
     return async function(dispatch){
         try {
-            const response = await axios .delete(`http://localhost:3001/rickandmorty/favs/${id}`);
+            const response = await axios.delete(`http://localhost:3001/rickandmorty/favs/${id}`);
             return dispatch({
                 type: DELETE_FAVORITE,
                 payload: response.data,})
@@ -40,7 +40,7 @@ export const deleteFavorite = (id) =>{
 export const getFavorites = () =>{
     return async function(dispatch){
         try {
-            const response = await axios .get(`http://localhost:3001/rickandmorty/favs/`);
+            const response = await axios.get(`http://localhost:3001/rickandmorty/favs/`);
             return dispatch({
                 type: "GET_FAVORITES",
                 payload: response.data,})
