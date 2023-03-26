@@ -13,7 +13,7 @@ function App () {
   const location = useLocation();
   const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
-  const [acces, setAcces] = useState(false);
+  const [access, setAcces] = useState(false);
 
   const username="example@example.com"
   const password ="asd123"
@@ -26,22 +26,26 @@ function App () {
   }
 
   useEffect(()=>{
-    !acces && navigate("/")
-  }, [acces])
+    !access && navigate("/")
+  }, [access])
 
 
 
   function onSearch(character) {
-   fetch(`https://localhost:3001/rickandmorty/onsearch/${character}`)
-   .then((response)=> response.json())
-   .then((data)=> {
-      if(data.name){
-        setCharacters((oldChars)=>[...oldChars, data]);
-      } else {
-        window.alert("No hay personajes con ese ID");
-      }
-   });
+    fetch(`http://localhost:3001/rickandmorty/onsearch/${character}`)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.name) {
+          setCharacters((oldChars) => [...oldChars, data]);
+        } else {
+          window.alert("No hay personajes con ese ID");
+        }
+      })
+      .catch((error) => {
+        console.error("Error durante la solicitud:", error);
+      });
   }
+  
 
   const onClose = (id) => {
     setCharacters(characters.filter(char => char.id !== id));
